@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'contact.dart';
+import 'gridview_card_page.dart';
+import 'gridview_page.dart';
 import 'home.dart';
-import 'list_view_builder.dart';
-import 'list_view_demo.dart';
-import 'list_view_menu.dart';
-import 'list_view_separate.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key); //1.constructor
@@ -14,7 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext buildContext) {
     //2.build
     return MaterialApp(
-      home: ListViewMenu(),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
     );
   }
 }
